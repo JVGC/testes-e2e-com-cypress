@@ -29,7 +29,7 @@ describe('Scenarios where a authenticaded user is required', () => {
     })
   })
 
-  it.only('logs out', () => {
+  it('logs out', () => {
     cy.visit('/')
     cy.wait('@getNotes')
     if (Cypress.config('viewportWidth') < Cypress.env('viewportWidthBreakpoint')) {
