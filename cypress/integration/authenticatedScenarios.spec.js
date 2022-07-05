@@ -37,10 +37,8 @@ describe('Scenarios where a authenticaded user is required', () => {
         .should('be.visible')
         .click()
     }
-    /* ==== Generated with Cypress Studio ==== */
     cy.get('.nav > :nth-child(2) > a').click()
     cy.get('#email').should('be.visible')
     cy.get('#password').should('be.visible')
-    /* ==== End Cypress Studio ==== */
   })
 })
