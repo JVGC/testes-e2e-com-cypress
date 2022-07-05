@@ -29,7 +29,7 @@ describe('Scenarios where a authenticaded user is required', () => {
     })
   })
 
-  it('logs out', () => {
+  it('logs out', { tags: '@desktop-and-tablet' }, () => {
     cy.visit('/')
     cy.wait('@getNotes')
     if (Cypress.config('viewportWidth') < Cypress.env('viewportWidthBreakpoint')) {
