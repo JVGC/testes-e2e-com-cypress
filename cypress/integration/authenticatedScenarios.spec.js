@@ -1,3 +1,4 @@
+/* eslint-disable cypress/no-unnecessary-waiting */
 import faker from 'faker'
 
 describe('Scenarios where a authenticaded user is required', () => {
@@ -31,12 +32,13 @@ describe('Scenarios where a authenticaded user is required', () => {
 
   it('logs out', { tags: '@desktop-and-tablet' }, () => {
     cy.visit('/')
-    cy.wait('@getNotes')
-    if (Cypress.config('viewportWidth') < Cypress.env('viewportWidthBreakpoint')) {
-      cy.get('.navbar-toggle.collapsed')
-        .should('be.visible')
-        .click()
-    }
+    cy.wait(2000)
+    // cy.wait('@getNotes')
+    // if (Cypress.config('viewportWidth') < Cypress.env('viewportWidthBreakpoint')) {
+    //   cy.get('.navbar-toggle.collapsed')
+    //     .should('be.visible')
+    //     .click()
+    // }
     cy.get('.nav > :nth-child(2) > a').click()
     cy.get('#email').should('be.visible')
     cy.get('#password').should('be.visible')
