@@ -5,6 +5,7 @@
   "experimentalSessionSupport": true,
   "chromeWebSecurity": false,
   "experimentalStudio": true,
+  "theme": "halloween",
   "env": {
     "viewportWidthBreakpoint": 768
   }
