@@ -31,8 +31,7 @@ describe('Scenarios where a authenticaded user is required', () => {
 
   it('logs out', { tags: '@desktop-and-tablet' }, () => {
     cy.visit('/')
-    cy.wait(2000)
-    // cy.wait('@getNotes')
+    cy.wait('@getNotes')
     // if (Cypress.config('viewportWidth') < Cypress.env('viewportWidthBreakpoint')) {
     //   cy.get('.navbar-toggle.collapsed')
     //     .should('be.visible')
