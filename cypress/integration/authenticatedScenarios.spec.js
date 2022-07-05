@@ -1,4 +1,3 @@
-/* eslint-disable cypress/no-unnecessary-waiting */
 import faker from 'faker'
 
 describe('Scenarios where a authenticaded user is required', () => {
