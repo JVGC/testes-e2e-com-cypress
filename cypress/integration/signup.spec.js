@@ -1,5 +1,6 @@
 /* THIS TEST NO LONGER WORKS DUE TO MAILOSAUR TRIAL ACCOUNT NO LONGER IS AVAILABLE */
 
+/* /// <reference path="../support/commands.d.ts" /> */
 // import faker from 'faker'
 
 // it('successfully signs up using confirmation code sent via email', () => {

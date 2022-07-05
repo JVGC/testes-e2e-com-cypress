@@ -1,3 +1,4 @@
+/// <reference path="../support/commands.d.ts" />
 import faker from 'faker'
 
 describe('Scenarios where a authenticaded user is required', () => {
@@ -7,7 +8,7 @@ describe('Scenarios where a authenticaded user is required', () => {
   })
   it('CRUDs notes', () => {
     const noteDescription = faker.lorem.words(4)
-    cy.addNewNote(noteDescription)
+    cy.createNewNote(noteDescription)
     cy.wait('@getNotes')
 
     const updatedNoteDescription = faker.lorem.words(4)

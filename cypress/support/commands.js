@@ -29,7 +29,7 @@ Cypress.Commands.add(
   }
 )
 
-Cypress.Commands.add('addNewNote', (noteDescription, attachFile = false) => {
+Cypress.Commands.add('createNewNote', (noteDescription, attachFile = false) => {
   cy.visit('/notes/new')
   cy.get('#content').type(noteDescription)
 
